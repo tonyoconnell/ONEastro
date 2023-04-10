@@ -8,6 +8,9 @@ module.exports = {
         sans: ["InterVariable", "Inter", ...defaultTheme.fontFamily.sans],
       },
     },
+    container: {
+      center: true,
+    },
   },
   plugins: [require("@tailwindcss/typography")],
 };
