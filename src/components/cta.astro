@@ -1,7 +1,18 @@
 ---
 import Link from "./ui/link.astro";
 ---
-
+<div x-data="{scrollBackTop: false}" x-cloak>
+  <button
+   x-show="scrollBackTop"
+   x-on:scroll.window="scrollBackTop = (window.pageYOffset > window.outerHeight * 0.5) ? true : false"
+   x-on:click="$scroll('#top')"
+   aria-label="Back to top"
+   class="fixed bottom-0 right-0 p-2 mx-10 my-10 text-white bg-gray-800 hover:bg-gray-700 focus:outline-none">
+     <svg viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6">
+       <path fill-rule="evenodd" d="M14.707 12.707A1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z" clip-rule="evenodd"></path>
+     </svg>
+ </button>
+</div>
 <div
   class="bg-black p-8 md:px-20 md:py-20 mt-20 mx-auto max-w-5xl rounded-lg flex flex-col items-center text-center">
   <h2 class="text-white text-4xl md:text-6xl tracking-tight">
@@ -12,6 +23,20 @@ import Link from "./ui/link.astro";
     architecture.
   </p>
   <div class="flex mt-5">
-    <Link href="#" style="inverted">Get Started</Link>
+
+    <Link id="myButton" href="#" style="inverted"> Started</Link>
   </div>
 </div>
+<div id="back2Top" class="bg-gray-300 text-center float-right cursor-pointer p-2 fixed right-5 bottom-5">
+  <?= $escaper->escapeHtml(__('Back to top')) ?>
+</div>
+
+<script>
+{
+    const back2Top = document.querySelector('#back2Top');
+    back2Top.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scroll({ top:0, left:0, behavior: 'smooth'});
+    });
+}
+</script>
