@@ -1,0 +1,69 @@
+---
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import Features from "@components/features.astro";
+import Footer from "@components/footer.astro";
+import Hero from "@components/hero.astro";
+import Logos from "@components/logos.astro";
+import Testimonials from "@components/testimonials.astro";
+import FAQ from "@components/faq.astro";
+import Layout from "@layouts/Layout.astro";
+---
+
+<Layout title="">
+  <Container>
+<!-- The button to open modal -->
+<label for="my-modal-4" class="btn">open modal</label>
+
+<!-- Put this part before </body> tag -->
+<input type="checkbox" id="my-modal-4" class="modal-toggle" />
+<label for="my-modal-4" class="modal cursor-pointer">
+  <label class="modal-box relative" for="">
+    <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
+    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p>
+  </label>
+</label>
+<div class="mockup-phone">
+  <div class="camera"></div> 
+  <div class="display">
+    <div class="artboard artboard-demo phone-1">Hi.</div>
+  </div>
+</div>
+<div class="grid">
+<div class="chat chat-start">
+  <div class="chat-image avatar">
+    <div class="w-10 rounded-full">
+      <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+    </div>
+  </div>
+  <div class="chat-header">
+    Obi-Wan Kenobi
+    <time class="text-xs opacity-50">12:45</time>
+  </div>
+  <div class="chat-bubble">You were the Chosen One!</div>
+  <div class="chat-footer opacity-50">
+    Delivered
+  </div>
+</div>
+<div class="chat chat-end">
+  <div class="chat-image avatar">
+    <div class="w-10 rounded-full">
+      <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+    </div>
+  </div>
+  <div class="chat-header">
+    Anakin
+    <time class="text-xs opacity-50">12:46</time>
+  </div>
+  <div class="chat-bubble">I hate you!</div>
+  <div class="chat-footer opacity-50">
+    Seen at 12:46
+  </div>
+</div>
+</div>
+
+<div class="component-preview not-prose text-base-content my-4 max-w-4xl" id="chat-with-header-and-footer"><div class="pb-2 text-sm font-bold"><a class="opacity-20 hover:opacity-60" href="#chat-with-header-and-footer">#</a> <span class="component-preview-title">Chat with header and footer</span></div>  <div class="grid"><div class="tabs z-10 -mb-px"><button class="tab tab-lifted tab-active [--tab-bg:hsl(var(--b2))]">Preview</button> <button class="tab tab-lifted [--tab-border-color:transparent]">HTML</button> <button class="tab tab-lifted [--tab-border-color:transparent]">JSX</button> <div class="tab tab-lifted mr-6 flex-1 cursor-default [--tab-border-color:transparent]"></div></div> <div class="bg-base-300 rounded-b-box rounded-tr-box relative overflow-x-auto"><div class="preview border-base-300 bg-base-200 rounded-b-box rounded-tr-box flex min-h-[6rem] min-w-[18rem] max-w-4xl flex-wrap items-center justify-center gap-2 overflow-x-hidden border bg-cover bg-top p-4 undefined" style="background-size: 5px 5px"><div class="w-full"><div class="chat chat-start"><div class="chat-header">Obi-Wan Kenobi
+  <time class="text-xs opacity-50">2 hours ago</time></div> <div class="chat-bubble">You were my brother, Anakin.</div> <div class="chat-footer opacity-50">Seen</div></div> <div class="chat chat-start"><div class="chat-header">Obi-Wan Kenobi
+  <time class="text-xs opacity-50">2 hour ago</time></div> <div class="chat-bubble">I loved you.</div> <div class="chat-footer opacity-50">Delivered</div></div></div></div></div>  </div></div>
+  </Container>
+</Layout>
