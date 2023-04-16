@@ -1,10 +1,10 @@
 ---
-import { Picture } from "@astrojs/image/components";
-import heroImage from "assets/hero.png";
 import Link from "@components/ui/link.astro";
 import Phone from "@components/device-phone.astro";
+import Container from "@components/container.astro";
 import { Icon } from "astro-icon";
 ---
+
 <style>
   main {
     background-image: url("backd.png");
@@ -12,43 +12,44 @@ import { Icon } from "astro-icon";
     background-position: center;
     background-repeat: repeat;
   }
- </style> 
-<main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block">
-    <Phone />
-  </div>
-  <div>
-    <h1
-      class="text-5xl  text-slate-100 lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      Elevate Ecommerce With AI
-    </h1>
-    <p class="text-lg mt-4 text-slate-100 max-w-xl">
-      Astroship is a starter template for startups, marketing websites & landing
-      pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly create
-      any website with this starter.
-    </p>
-    <div class="mt-6 flex flex-col sm:flex-row gap-3">
-      <Link
-        href="#"
-        href="https://web3templates.com/templates/astroship-starter-website-template-for-astro"
-        target="_blank"
-        class="flex gap-1 items-center justify-center"
-        rel="noopener">
-        <Icon class="text-white w-5 h-5" name="bx:bxs-cloud-download" />
+</style>
 
-        Download for Free
-      </Link>
-      <Link
-        size="lg"
-        style="outline"
-        rel="noopener"
-        href="https://github.com/surjithctly/astroship"
-        class="flex gap-1 items-center justify-center"
-        target="_blank">
-        <Icon class="text-black w-4 h-4" name="bx:bxl-github" />
-        GitHub Repo
-      </Link>
+<Container>
+  <main
+    class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
+    <div class="py-6 md:order-1 hidden md:block">
+      <Phone />
     </div>
-  </div>
-</main>
+    <div>
+      <h1
+        class="text-4xl text-slate-100 lg:text-5xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter">
+        Elevate Ecommerce With AI
+      </h1>
+      <p class="text-lg mt-4 text-slate-100 max-w-xl">
+        Astroship is a starter template for startups, marketing websites &
+        landing pages.<wbr /> Built with Astro.build and TailwindCSS. You can quickly
+        create any website with this starter.
+      </p>
+      <div class="mt-6 flex flex-col sm:flex-row gap-3">
+        <Link
+          href="#learn-more"
+          class="flex gap-1 items-center justify-center"
+          rel="noopener">
+          <Icon class="text-white w-5 h-5" name="ph:arrow-square-down" />
+
+          Learn More
+        </Link>
+        <Link
+          size="lg"
+          style="outline"
+          href="/pricing"
+          class="flex gap-1 items-center justify-center"
+          >
+          <Icon class="text-black w-4 h-4" name="ic:round-rocket-launch" />
+          Get Started
+        </Link>
+      </div>
+     
+    </div>
+  </main>
+</Container>
