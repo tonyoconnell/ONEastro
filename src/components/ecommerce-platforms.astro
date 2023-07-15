@@ -1,36 +1,40 @@
 ---
 import Container from "@components/container.astro";
 ---
+
 <div class="background">
-<Container>
-    <div class="inline-flex flex-col space-y-20 items-center justify-start py-28 pl-2.5 pr-16" style="width: 1360px; height: 854px;">
-    <div class="flex flex-col space-y-4 items-center justify-start" style="width: 1286px; height: 156px;">
-        <p class="text-base font-semibold leading-normal text-center text-white">Ecommerce Chat Marketing</p>
-        <p class="text-5xl font-bold leading-10 text-center text-white" style="width: 1286px;">Connect your ecommerce store to every channel seamlessly</p>
+  <Container />
+  <div class="grid grid-cols-1 md:grid-cols-3 items-center ecommercere-platforms">
+    <div>
+      <img src="logo-shopify.png" alt="Shopify" />
+      <p class="text-2xl font-bold leading-loose text-center text-white">
+        Shopify
+      </p>
+      <p class="text-base leading-normal text-center text-white">
+        Connect your Shopify store to send product, collection, customer, cart,
+        order and information across all channels as messages.
+      </p>
     </div>
-    <div class="inline-flex space-x-12 items-start justify-center" style="width: 1286px; height: 394px;">
-        <div class="inline-flex flex-col space-y-8 items-center justify-start" style="width: 396.67px; height: 394px;">
-            <div class="flex flex-col space-y-4 items-center justify-center" >
-                <img src="logo-shopify.png" alt="Shopify" />
-                <p class="text-2xl font-bold leading-loose text-center text-white" style="width: 396.67px;">Shopify </p>
-                <p class="text-base leading-normal text-center text-white" style="width: 396.67px;">Connect your Shopify store to send product, collection, customer, cart, order and information across all channels as messages.</p>
-            </div>
-        </div>
-        <div class="inline-flex flex-col space-y-8 items-center justify-center" style="width: 396.67px; height: 394px;">
-            <div class="flex flex-col space-y-4 items-center justify-center">
-                <img src="logo-woo.svg" alt="Woo Commerce" />
-                <p class="text-2xl font-bold leading-loose text-center text-white" style="width: 396.67px;">WooCommerce</p>
-                <p class="text-base leading-normal text-center text-white" style="width: 396.67px;">Connect your WooCommerce store to send product, collection, customer, cart, order and information across all channels as messages.</p>
-            </div>
-        </div>
-        <div class="inline-flex flex-col space-y-8 items-center justify-center" style="width: 396.67px; height: 394px;">
-            <div class="flex flex-col space-y-4 items-start justify-start">
-                <img src="logo-fb.svg" alt="Social" />
-                <p class="text-2xl font-bold leading-loose text-center text-white" style="width: 396.67px;">Social Shopping</p>
-                <p class="text-base leading-normal text-center text-white" style="width: 396.67px;">Connect your Facebook and Instragram shops to send product, collection, customer, cart, order and information across all channels as messages.</p>
-            </div>
-        </div>
+    <div>
+      <img src="logo-woo.svg" alt="Woo Commerce" />
+      <p class="text-2xl font-bold leading-loose text-center text-white">
+        WooCommerce
+      </p>
+      <p class="text-base leading-normal text-center text-white">
+        Connect your WooCommerce store to send product, collection, customer,
+        cart, order and information across all channels as messages.
+      </p>
     </div>
-</div>
-</Container>
+    <div>
+      <img src="logo-fb.svg" alt="Social" />
+      <p class="text-2xl font-bold leading-loose text-center text-white">
+        Social Shopping
+      </p>
+      <p class="text-base leading-normal text-center text-white">
+        Connect your Facebook and Instragram shops to send product, collection,
+        customer, cart, order and information across all channels as messages.
+      </p>
+    </div>
+  </div>
+  <Container />
 </div>

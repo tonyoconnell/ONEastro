@@ -33,3 +33,7 @@ h1 {
 .center {
     text-align: center;
 }
+.grid img {
+  margin: auto;
+}
+.ecommerce-platforms {padding: 40px;}
